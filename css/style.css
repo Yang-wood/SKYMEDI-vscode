@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+:root {
+	--main-color: #5D9AB2;
+	--accent-color: #BF6A7A;
+	--dart-main-color: #2B5566;
+	--text-bright-color: #fff;
+  }
+
+body {
+	margin: 0;
+	font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif;
+ }
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0px;
+    transition: background-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0); /* 투명 */
+    z-index: 999;
+  }
+
+  /* 마우스 올라갔을 때: 반투명 */
+header:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+header:hover .headA {
+    color: rgb(25, 25, 25);
+}
+header:hover .headB .hB-small {
+    color: rgb(25, 25, 25);
+}
+
+/* 스크롤 시: 반투명 (JS로 클래스 추가) */
+header.scrolled {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(25, 25, 25);
+  }
+
+.headA {
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 30px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; /* 더 두껍고 고급스러움 */
+    font-size: 26px;
+    text-decoration: none;
+  }
+  
+.headA:hover {
+    transform: scale(1.1); /* 마우스 올라갔을 때 살짝 확대 */
+}
+  
+.headB {
+    line-height: 50px;
+}
+
+.headB ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.headB .hB-small {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.headB a {
+	display: block;
+	padding: 15px;
+	color: #fff;;
+	font-size: 15px;
+    font-weight: 100;
+	text-decoration: none;
+}
+
+.headB li {
+    position: relative; /* 자식 ul의 absolute 기준 */
+  }
+
+.headB li ul {
+    display: none;
+    position: absolute;
+    top: 100%; /* 바로 아래로 띄움 */
+    left: 0;
+    z-index: 999;
+    width: 160px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+.headB li:hover ul {
+	display: block;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.headB li ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.container {
+    overflow: visible;
+  }
+  
+
+@media (min-width:768px) {
+	header .container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}	
+	
+	.headB ul {
+		display: flex;
+	}
+	
+	.headC {
+        display: none;
+    }
+	
+	.headB {
+		display: block !important;
+	}
+}
+
+body {
+    background-color: rgb(94, 94, 94);
+  }
