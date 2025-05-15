@@ -1,6 +1,15 @@
 $(document).ready(function(){
 	$(".allMenu").click(function(){
-		$(".headB").slideToggle();
+		const headB = $(".headB");
+		const headD = $(".headD");
+
+		if (headB.is(":visible")) {
+			headB.slideUp(300);
+			headD.fadeIn(200);
+		} else {
+			headB.slideDown(300);
+			headD.fadeOut(200);
+		}
 	});
 });
 
