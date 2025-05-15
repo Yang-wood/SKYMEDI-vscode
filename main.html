@@ -8,62 +8,127 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-M2+JAZ/..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://use.fontawesome.com/926fe18a63.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./js/main.js"></script>
 </head>
 <body>
-    <header>
+    <header class="mainHeader">
         <div class="container">
             <div class="container-small">
                 <a href="main.html" class="headA">하늘병원</a>
-                <button type="button" class="headC">
+                <button type="button" class="allMenu">
 					<span class="fa fa-bars" title="MENU"></span>
 				</button>
             </div>
             <nav class="headB">
 				<ul>
-					<li><a href="#" class="hB-small">병원소개</a>
+					<li><a href="./hospital-info/welcome.html" class="hB-small">병원소개</a>
                         <ul>
-                            <li><a href="">인사말</a></li>
-                            <li><a href="">의료진 소개</a></li>
-                            <li><a href="">병원 둘러보기</a></li>
-                            <li><a href="">오시는길</a></li>
+                            <li><a href="./hospital-info/welcome.html">인사말</a></li>
+                            <li><a href="./hospital-info/doctors.html">의료진 소개</a></li>
+                            <li><a href="./hospital-info/hopital.html">병원 둘러보기</a></li>
+                            <li><a href="./hospital-info/map.html">오시는길</a></li>
                         </ul>
                     </li>
-					<li><a href="#" class="hB-small">진료안내</a>
+					<li><a href="./medi-info/medical-status.html" class="hB-small">진료안내</a>
                         <ul>
-                            <li><a href="">진료현황</a></li>
-                            <li><a href="">상담문의</a></li>
-                            <li><a href="">예약안내</a></li>
-                            <li><a href="">비급여안내</a></li>
+                            <li><a href="./medi-info/medical-status.html">진료현황</a></li>
+                            <li><a href="./medi-info/consulting.html">상담문의</a></li>
+                            <li><a href="./medi-info/reservation.html">예약안내</a></li>
+                            <li><a href="./medi-info/non-insurance.html">비급여안내</a></li>
                         </ul>
                     </li>
-					<li><a href="#" class="hB-small">건강일지</a>
+					<li><a href="./health-log/input.html" class="hB-small">건강일지</a>
                         <ul>
-                            <li><a href="">진단 입력하기</a></li>
-                            <li><a href="">혈당입력</a></li>
-                            <li><a href="">키/몸무게입력</a></li>
-                            <li><a href="">조회 허락하기</a></li>
+                            <li><a href="./health-log/input.html">진단 입력하기</a></li>
+                            <li><a href="./health-log/bst.html">혈당입력</a></li>
+                            <li><a href="./health-log/bmi.html">키/몸무게입력</a></li>
+                            <li><a href="./health-log/agree.html">조회 허락하기</a></li>
                         </ul>
                     </li>
-					<li><a href="#" class="hB-small">고객센터</a>
+					<li><a href="./information/practice.html" class="hB-small">고객센터</a>
 						<ul>
-							<li><a href="#">공지사항</a></li>
-							<li><a href="#">자주하는 질문</a></li>
-							<li><a href="#">칭찬합니다</a></li>
+							<li><a href="./information/practice.html">공지사항</a></li>
+							<li><a href="./information/qna.html">자주하는 질문</a></li>
+							<li><a href="./information/feedback.html">칭찬합니다</a></li>
 						</ul>
 					</li>
 				</ul>
 			</nav>
+            <nav class="headD">
+                <ul>
+                    <li><a href="./login/signin.html">로그인</a></li>
+                    <li><a href="./login/signup.html">회원가입</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="conA">
+        <h2> 이미지 3개</h2>
+        <p>이미지 3~4개가 순차적으로 전환하는 효과<br>
+        이미지가 바뀔 때 문구에도 효과 적용</p>
+    </section>
+    <section class="conB">
+
+    </section>
+    <section class="conC">
+
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footA">
+                <div class="footB">
+                    <ul>
+                        <li><a href="#">병원소개</a></li>
+                        <li><a href="#" class="line">오시는길</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </div>
+                <p>광주광역시 서구 농성동</p>
+                <div>ⓒ하늘병원 corp. All rights reserved.</div>
+                <nav class="footD">
+				 	<ul>
+				 		<li>
+				 			<a href="#">
+				 				<span class="fa fa-twitter"></span>
+				 				<span class="sr-only">Twitter</span>
+				 			</a>
+				 		</li>
+				 		<li>
+				 			<a href="#">
+				 				<span class="fa fa-facebook"></span>
+				 				<span class="sr-only">Facebook</span>
+				 			</a>
+				 		</li>
+				 		<li>
+				 			<a href="#">
+				 				<span class="fa fa-google-plus"></span>
+				 				<span class="sr-only">Google Plus</span>
+				 			</a>
+				 		</li>
+				 		<li>
+				 			<a href="#">
+				 				<span class="fa fa-instagram"></span>
+				 				<span class="sr-only">Instagram</span>
+				 			</a>
+				 		</li>
+				 		<li>
+				 			<a href="#">
+				 				<span class="fa fa-youtube"></span>
+				 				<span class="sr-only">YouTube</span>
+				 			</a>
+				 		</li>
+				 	</ul>
+			 	</nav>
+            </div>
+            <div class="footC">
+                <h2><a href="main.html">하늘병원</a></h2>
+            </div>
 
         </div>
-
-    </header>
-    
-    
-    <section></section>
-    <footer></footer>
+    </footer>
     
 </body>
 </html>
