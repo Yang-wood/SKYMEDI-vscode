@@ -120,7 +120,7 @@ header:hover .headD a:hover {
   left: 0;
   z-index: 999;
   width: 160px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3); /* 마우스 호버 시 살짝 더 어두어짐 */
   padding: 0;
   margin: 0;
   list-style: none;
@@ -178,14 +178,16 @@ header:hover .headD a:hover {
 	}
 	
 	.allMenu {
-        display: none;
-    }
+    display: none;
+  }
 	
 	.headB {
 		display: block !important;
 	}
 }
 @media (max-width:968px) {
+
+
 
   header .container-small {
 		display: flex;
@@ -194,7 +196,7 @@ header:hover .headD a:hover {
 	}
 	
 	.allMenu {
-		margin-right: 10px;
+    margin-right: 10px;
 		padding: 0;
 		border: none;
 		outline: none;
@@ -211,13 +213,40 @@ header:hover .headD a:hover {
 	.allMenu:hover {
 		opacity: 0.3;
 	}
-	
+
 	.headB {
 		display: none;
 	}
 
+  .headB li {
+    width: 150px;
+  }
+
+  .headB li:hover {
+    background-color: rgba(0, 0, 0, 0.3); /* 마우스 호버 시 어둡게 */
+  }
+
+  .headB .hB-small {
+    width: 100px;
+  }
+
+  .headB li ul {
+  display: none;
+  position: absolute;
+  top: 0; /* 바로 아래로 띄움 */
+  left: 100%;
+  z-index: 999;
+  width: 150px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  }
+
   .headD {
-    display: none;
+    margin-left: auto;
+    justify-content: end;
+    height: 40px;
   }
 }
 
@@ -305,6 +334,10 @@ footer .container {
     padding: 0;
 }
 
+.footB ul li:hover {
+  transform: scale(1.07);
+}
+
 .footB li {
     margin-right: 15px; /* 항목 간 간격 */
 }
@@ -313,12 +346,6 @@ footer .container {
     font-size: 15px;
     text-decoration: none;
     color: #fff;
-    transition: color 0.3s ease, border-bottom 0.3s ease; /* hover 효과 */
-}
-
-.footB li a:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
 }
 
 .footB .line {
@@ -335,6 +362,10 @@ footer .container {
     align-items: center;
     width: 30%; /* footC 너비 */
     z-index: 1;
+}
+
+.footC h2:hover {
+  transform: scale(1.1);
 }
 
 .footC h2 a {
@@ -362,6 +393,7 @@ footer .container {
 .footD li {
     margin: 0 10px;
 }
+
 
 .footD a {
     color: #fff;
@@ -393,7 +425,7 @@ footer .container {
     }
 
     .footC {
-      display: none;
+        display: none;
     }
 
     .footA {
@@ -433,11 +465,23 @@ footer .container {
 
 /* 화면 너비가 480px 이하일 때 */
 @media (max-width: 480px) {
+    .footA p {
+      font-size: 12px;
+    }
+    
+    .footA .corp {
+      font-size: 12px;
+    }
+  
+    .footB li a {
+      font-size: 12px;
+    }
+
     .footC h2 a {
-        font-size: 24px; /* 더 작은 화면에서 로고 글자 크기 축소 */
+      font-size: 24px; /* 더 작은 화면에서 로고 글자 크기 축소 */
     }
 
     .footD a {
-        font-size: 18px; /* 아이콘 크기 축소 */
+      font-size: 18px; /* 아이콘 크기 축소 */
     }
 }
