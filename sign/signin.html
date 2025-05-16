@@ -25,26 +25,26 @@
 				<ul>
 					<li><a href="../hospital-info/welcome.html" class="hB-small">병원소개</a>
                         <ul>
-                            <li><a href="">인사말</a></li>
-                            <li><a href="">의료진 소개</a></li>
-                            <li><a href="">병원 둘러보기</a></li>
-                            <li><a href="">오시는길</a></li>
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">의료진 소개</a></li>
+                            <li><a href="#">병원 둘러보기</a></li>
+                            <li><a href="#">오시는길</a></li>
                         </ul>
                     </li>
 					<li><a href="#" class="hB-small">진료안내</a>
                         <ul>
-                            <li><a href="">진료현황</a></li>
-                            <li><a href="">상담문의</a></li>
-                            <li><a href="">예약안내</a></li>
-                            <li><a href="">비급여안내</a></li>
+                            <li><a href="#">진료현황</a></li>
+                            <li><a href="#">상담문의</a></li>
+                            <li><a href="#">예약안내</a></li>
+                            <li><a href="#">비급여안내</a></li>
                         </ul>
                     </li>
 					<li><a href="#" class="hB-small">건강일지</a>
                         <ul>
-                            <li><a href="">진단 입력하기</a></li>
-                            <li><a href="">혈당입력</a></li>
-                            <li><a href="">키/몸무게입력</a></li>
-                            <li><a href="">조회 허락하기</a></li>
+                            <li><a href="#">진단 입력하기</a></li>
+                            <li><a href="#">혈당입력</a></li>
+                            <li><a href="#">키/몸무게입력</a></li>
+                            <li><a href="#">조회 허락하기</a></li>
                         </ul>
                     </li>
 					<li><a href="#" class="hB-small">고객센터</a>
@@ -52,6 +52,7 @@
 							<li><a href="#">공지사항</a></li>
 							<li><a href="#">자주하는 질문</a></li>
 							<li><a href="#">칭찬합니다</a></li>
+                            <li><a href="#">불편사항</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -69,15 +70,27 @@
         <h1>로그인</h1>
     </section>
     <section class="conB">
-        
+        <div class="login-container">
+        <h2>하늘병원 로그인</h2>
+        <form action="/login" method="post">
+            <input type="text" name="username" placeholder="아이디" required>
+            <input type="password" name="password" placeholder="비밀번호" required>
+            <button type="submit">로그인</button>
+        </form>
+        <div class="extra-links">
+            <a href="#">아이디 찾기</a> |
+            <a href="#">비밀번호 찾기</a> |
+            <a href="../sign/signup.html">회원가입</a>
+        </div>
+        </div>
     </section>
     <footer>
         <div class="container">
             <div class="footA">
                 <div class="footB">
                     <ul>
-                        <li><a href="../hospital-info/welcome.html">병원소개</a></li>
-                        <li><a href="../" class="line">오시는길</a></li>
+                        <li><a href="../hospital-info/welcome.html">병원소개</a></li> |
+                        <li><a href="../" class="line">오시는길</a></li> |
                         <li><a href="#">공지사항</a></li>
                     </ul>
                 </div>
