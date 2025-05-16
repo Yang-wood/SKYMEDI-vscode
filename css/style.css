@@ -187,8 +187,6 @@ header:hover .headD a:hover {
 }
 @media (max-width:968px) {
 
-
-
   header .container-small {
 		display: flex;
 		align-items: center;
@@ -217,7 +215,7 @@ header:hover .headD a:hover {
 	.headB {
 		display: none;
 	}
-
+  
   .headB li {
     width: 150px;
   }
@@ -232,10 +230,10 @@ header:hover .headD a:hover {
 
   .headB li ul {
   display: none;
-  position: absolute;
-  top: 0; /* 바로 아래로 띄움 */
-  left: 100%;
-  z-index: 999;
+  position: fixed;
+  top: 50px;
+  left: 150px;
+  z-index: 9999;
   width: 150px;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 0;
@@ -338,21 +336,11 @@ footer .container {
   transform: scale(1.07);
 }
 
-.footB li {
-    margin-right: 15px; /* 항목 간 간격 */
-}
-
 .footB li a {
     font-size: 15px;
     text-decoration: none;
     color: #fff;
-}
-
-.footB .line {
-    border-left: 2px solid #fff;
-    border-right: 2px solid #fff;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin: 0 10px;
 }
 
 /* footC */
