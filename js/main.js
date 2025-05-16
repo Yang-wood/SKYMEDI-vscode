@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+	//모바일 화면용 버튼 구현
 	$(".allMenu").click(function(){
 		const headB = $(".headB");
 		const headD = $(".headD");
